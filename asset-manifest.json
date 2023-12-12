@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/wikipelis/static/css/main.8e8e8074.css",
+    "main.js": "/wikipelis/static/js/main.a3d64176.js",
+    "static/media/star.svg": "/wikipelis/static/media/star.771f0787063d13a099771a8ade15be9b.svg",
+    "index.html": "/wikipelis/index.html",
+    "main.8e8e8074.css.map": "/wikipelis/static/css/main.8e8e8074.css.map",
+    "main.a3d64176.js.map": "/wikipelis/static/js/main.a3d64176.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e8e8074.css",
+    "static/js/main.a3d64176.js"
+  ]
+}
