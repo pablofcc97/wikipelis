@@ -1,0 +1,48 @@
+.genreExplore{
+    max-width: 1200px;
+    overflow: hidden;
+}
+.genre__list{
+    gap:1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+a.genre__button{
+    text-align: center;
+    font-size: 1rem;
+    background-color: #1E1D22;
+}
+a.genre__buttonActive{
+    background-color: var(--first-color);
+}
+
+.genre__movieList{
+    /*grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;*/
+    gap:2rem;
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+}
+.genre__movieList::-webkit-scrollbar {
+    height: 5px;
+}
+@media(max-width: 600px){
+    
+    .genre__list{
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        margin-bottom: 2rem;
+    }
+    .genre__list::-webkit-scrollbar {
+        height: 0;
+    }
+    a.genre__button{
+        white-space: nowrap;
+    }
+    .genre__movieList::-webkit-scrollbar {
+        height: 0;
+    }
+}
