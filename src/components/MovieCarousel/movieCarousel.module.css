@@ -1,0 +1,36 @@
+.movieSlider{
+    position: relative;
+}
+.movieList{
+    gap:2rem;
+    overflow-x: scroll;
+}
+.movieList::-webkit-scrollbar {
+    height: 0;
+}
+.arrow{
+    position: absolute;
+    top: 45%;
+    background-color: #ffffff33;
+    width: 3rem;
+    height: 3rem;
+    z-index: 5;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .2s linear;
+    border-radius: 50%;
+}
+.arrow:hover{
+    opacity: 1;
+}
+.arrowLeft{
+    left: -2rem;
+}
+.arrowRight{
+    right: -2rem;
+}
+@media(max-width:1100px){
+    .arrow{
+        display: none;
+    }
+}

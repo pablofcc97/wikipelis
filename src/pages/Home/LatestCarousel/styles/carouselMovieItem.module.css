@@ -1,0 +1,108 @@
+.carouselMovieItem{
+    min-width:100vw;
+    min-height: 70vh;
+    max-width: 1920px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s linear;
+    grid-column: 1;
+    grid-row: 1;
+}
+.carouselMovieItemActive{
+    opacity: 1;
+}
+.carouselMovieItem::before{
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background-color: #00000080;
+}
+.carouselMovieItem__info{
+    z-index: 6;
+    width: 1140px;
+    gap:5%;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.carouselMovieItem__poster{
+    width: 250px;
+    aspect-ratio: 2/3;
+}
+.carouselMovieItem__title{
+    font-size: 4rem;
+    margin-bottom: .5rem;
+}
+.carouselMovieItem__description{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-right: 20%;
+    max-height: 5rem;
+
+    max-height: calc(1.6em * 3);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.carouselMovieItem__calification{
+    font-size: 1.5rem;
+    font-weight: var(--font-semibold);
+    display: block;
+    margin-bottom: 2rem;
+}
+.carouselMovieItem__button{
+    font-size: 1.15rem;
+}
+@media(max-width:1100px){
+    .carouselMovieItem{
+        min-height: 750px;
+        background-size: contain;
+        background-position: top;
+        align-items: flex-end;
+        padding-bottom: 3rem;
+    }
+    .carouselMovieItem::before{
+        background:linear-gradient(0deg, #000 35%, #00000000);
+    }
+    .carouselMovieItem__info{
+        max-width: 85%;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carouselMovieItem__poster{
+        max-width: 60%;
+        margin-bottom: 1.5rem;
+    }
+    .carouselMovieItem__title{
+        font-size: 2.5rem;
+    }
+    .carouselMovieItem__description{
+        font-size: 1rem;
+        padding-right: 0;
+    }
+    .carouselMovieItem__button{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:650px){
+    .carouselMovieItem{
+        min-height: 600px;
+        height: 75vh;
+        padding: 2rem 0 2rem;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+    .carouselMovieItem__title{
+        font-size: 2rem;
+    }
+    .carouselMovieItem__calification{
+        font-size: 1.1rem;
+    }
+    .carouselMovieItem__calification img{
+        height: 1.1rem;
+    }
+}
