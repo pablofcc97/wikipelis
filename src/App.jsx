@@ -10,7 +10,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route 
-            path='/' 
+            path='/wikipelis' 
             element={<Home/>}>
           </Route>
           <Route 
