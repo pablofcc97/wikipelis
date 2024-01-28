@@ -35,6 +35,10 @@ div.movie__container{
 .movie__title{
     margin-bottom: 1rem;
 }
+.movie__subtitle{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
 .movie__tagline{
     margin-bottom: 1rem;
 }
@@ -45,23 +49,9 @@ div.movie__container{
     margin-bottom: 3rem;
     aspect-ratio: 16/9;
 }
-.movie__infoContainer{
-    gap: 3rem;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 3rem;
-}
-.movie__subtitle{
-    margin-bottom: .5rem;
-    font-size: 1.2rem;
-}
-.movie__genres{
-    gap:2rem;
-    margin-bottom: 3rem;
-}
-.movie__genre{
-    transition: color .2s linear;
-}
-.movie__genre:hover{
-    color:var(--first-color--light);
+
+@media(max-width:600px){
+    .movie__poster{
+        max-width: 200px;
+    }
 }

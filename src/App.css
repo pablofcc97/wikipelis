@@ -178,11 +178,11 @@ img{
 @media(max-width:1100px){
   :root{
     --header-height: 6rem;
-    --section-padding:5rem;
+    --section-padding:5.5rem;
     --h1-size:  3rem;
   }
   .container{
-    padding: var(--section-padding) 5%;
+    padding: var(--section-padding) 5% 0;
   }
   h2{
     margin-bottom: 3rem;
@@ -195,7 +195,7 @@ img{
 @media(max-width:700px){
   :root{
     --header-height: 6rem;
-    --section-padding:4.5rem;
+    --section-padding:3.5rem;
     --h1-size:  2.2rem;
     --h2-size:  1.65rem;
     --h3-size:  1.4rem;

@@ -1,0 +1,36 @@
+.movieDetails{
+    margin-bottom: 3.5rem;
+}
+.movie__infoContainer{
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.movie__infoContainerSimple{
+    gap:2rem;
+    justify-content: flex-start;
+}
+
+.info__title{
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+}
+.movie__genre{
+    transition: color .2s linear;
+}
+.movie__genre:hover{
+    color:var(--first-color--light);
+}
+@media(max-width:600px){
+    .movie__infoContainer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .movie__infoContainerSimple{
+        flex-direction: row;
+        gap: 1rem 2rem;
+    }
+}

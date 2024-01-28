@@ -10,7 +10,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route 
-            path='/wikipelis' 
+            path='wikipelis/' 
             element={<Home/>}>
           </Route>
           <Route 
@@ -25,5 +25,5 @@ function App() {
 
 export default App
 
-
+//RUTA CAMBIADA A /WIKIPELIS POR GITHUBPAGES
 
