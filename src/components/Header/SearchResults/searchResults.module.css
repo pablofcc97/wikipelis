@@ -1,0 +1,15 @@
+.searchResultsContainer{
+    width: 100%;
+    /*background-color: #00000096;
+    backdrop-filter: blur(50px);*/
+    background-color: #000000;
+    padding: 2rem 0 6rem;
+}
+.searchResults{
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.searchResultsMessage{
+    font-size: var(--h2-size);
+}

@@ -1,17 +1,24 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Movie from './pages/Movie'
+import Result from './pages/Search'
+import Header from './components/Header/header'
 import './App.css'
 
 function App() {
 
   return (
-    <Router>
+    <Router >
+      <Header/>
       <div className="App">
         <Routes>
           <Route 
-            path='wikipelis/' 
+            path='/' 
             element={<Home/>}>
+          </Route>
+          <Route 
+            path='/resultados/' 
+            element={<Result/>}>
           </Route>
           <Route 
             path='/pelicula/:id' 
