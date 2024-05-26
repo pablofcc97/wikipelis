@@ -27,7 +27,7 @@ const Movie = () =>{
         .then(response => {
             setRelatedMovies(response.results)
         })
-    },[])
+    },[id])
     if(movie.title){
         return(
             <div className={`${styles.movie}`}>
